@@ -1,3 +1,44 @@
 body {
-    background-color: bisque;
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+/* Стилізація для меню */
+.menu {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.menu button:hover {
+    background-color: #0056b3;
+}
+
+/* Стилізація для основної частини */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.content div[data-content] {
+    display: none; /* Спочатку всі блоки приховані */
+}
+
+.content div.active {
+    display: block; /* Відображаємо активний блок */
 }
