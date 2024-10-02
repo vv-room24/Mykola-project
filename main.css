@@ -1,4 +1,10 @@
-body {
+.header {
+    text-align: center;
+    background-color: rgba(20, 20, 200, 0.5);
+    font-family: sans-serif;
+}
+
+.main {
     display: flex;
     font-family: Arial, sans-serif;
 }

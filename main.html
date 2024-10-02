@@ -7,23 +7,27 @@
     <script defer src="main.js"></script>
     <title>Document</title>
 </head>
-<body>       
-    <div class="menu">
-        <button id="addButton" onclick="handleClick(this.id)">Add asset</button>
-        <button id="tableButton" onclick="handleClick(this.id)">Assets table</button>
-        <button id="infoButton" onclick="handleClick(this.id)">Asset info</button>
-    </div>
-    <div class="content">
-        <div id="addButtonSection" data-content class="active">
-            <h2>Add asset</h2>
+<body> 
+    <div class="header">
+        <h1>Assets Management</h1>
+    </div>  
+    <div class="main">
+        <div class="menu">
+            <button id="addButton" onclick="handleClick(this.id)">Add asset</button>
+            <button id="tableButton" onclick="handleClick(this.id)">Assets table</button>
+            <button id="infoButton" onclick="handleClick(this.id)">Asset info</button>
         </div>
-        <div id="tableButtonSection" data-content>
-            <h2>Assets table</h2>
+        <div class="content">
+            <div id="addButtonSection" data-content class="active">
+                <h2>Add asset</h2>
+            </div>
+            <div id="tableButtonSection" data-content>
+                <h2>Assets table</h2>
+            </div>
+            <div id="infoButtonSection" data-content>
+                <h2>Asset info</h2>
+            </div>
         </div>
-        <div id="infoButtonSection" data-content>
-            <h2>Asset info</h2>
-        </div>
-    </div>
-
+    </div>    
 </body>
 </html>
