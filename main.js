@@ -8,6 +8,7 @@ fetch('data.csv')
         // Розділяємо текст на рядки та колонки
         const rows = text.split("\n").map(row => row.split(","));
         console.log(rows);
+        generateTable(rows);
         
         // Виводимо у HTML
         const output = document.getElementById('output');
@@ -24,4 +25,28 @@ function handleClick(contentId) {
     });
     const activeBlock = document.getElementById(contentId + 'Section');
     activeBlock.classList.add('active');
+}
+
+function generateTable(data) {
+    const table = document.getElementById('data-table');
+    const thead = document.createElement('thead');
+    const headerRow = document.createElement('tr');
+    Object.values(data[0]).forEach(value => {
+        const th = document.createElement('th');
+        th.textContent = value;
+        headerRow.appendChild(th);
+    });
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
+    const tbody = document.createElement('tbody');
+    data.slice(1).forEach(item => {
+        const row = document.createElement('tr');
+        Object.values(item).forEach(value => {
+            const td = document.createElement('td');
+            td.textContent = value;
+            row.appendChild(td);
+        });
+        tbody.appendChild(row);
+    });
+    table.appendChild(tbody);
 }
