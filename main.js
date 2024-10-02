@@ -1,4 +1,4 @@
-function showContent(contentId) {
+function handleClick(contentId) {
     const contentBlocks = document.querySelectorAll('.content div[data-content]');
     contentBlocks.forEach(block => {
         block.classList.remove('active');
