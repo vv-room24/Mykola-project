@@ -1,8 +1,11 @@
 .header {
-    text-align: center;
+    /* text-align: center; */
     background-color: rgba(20, 20, 200, 0.5);
     font-family: sans-serif;
     height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main {
@@ -36,6 +39,23 @@
 .menu button:hover {
     background-color: #0056b3;
 }
+
+.assetTable {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.assetTable td,th{
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+}
+
+.assetTable th{
+    background-color: #cccccc;
+}
+
 
 /* Стилізація для основної частини */
 .content {
