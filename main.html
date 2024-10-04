@@ -4,14 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">  
-    <script defer src="main.js"></script>
+    <script src="main.js"></script>
     <title>Document</title>
 </head>
-<body>    
+<body>
+    <!-- Колонка меню -->
     <div class="menu">
-        <button >Add asset</button>
-        <button >Assets table</button>
-        <button >Asset info</button>
-    </div>   
+        <button onclick="showContent('content1')">Add asset 1</button>
+        <button onclick="showContent('content2')">Assets table 2</button>
+        <button onclick="showContent('content3')">Asset info 3</button>
+    </div>
+            
+    <!-- Основна частина -->
+    <div class="content">
+        <div id="content1" class="active">
+            <h2>Пункт 1</h2>
+            <p>Детальна інформація для пункту 1.</p>
+        </div>
+        <div id="content2">
+            <h2>Пункт 2</h2>
+            <p>Детальна інформація для пункту 2.</p>
+        </div>
+        <div id="content3">
+            <h2>Пункт 3</h2>
+            <p>Детальна інформація для пункту 3.</p>
+         </div>
+    </div>
+
 </body>
 </html>
