@@ -20,6 +20,21 @@
         <div class="content">
             <div id="addButtonSection" data-content class="active">
                 <h2>Add asset</h2>
+                <form id="assetForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter asset name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="number" id="price" placeholder="Enter price" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="holder">Holder</label>
+                        <input type="text" id="holder" placeholder="Enter holder" required>
+                    </div>
+                    <button id="addAsset" type="button">ADD</button>
+                </form>
             </div>
             <div id="tableButtonSection" data-content>
                 <h2>Assets table</h2>
